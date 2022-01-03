@@ -11,17 +11,11 @@ public class playerMovement : MonoBehaviour
     {
         CameraMoving();
 
-        // 앞면 처리
-        Vector3 head = cameraTransform.localRotation * Vector3.forward;
-        head.y = 0;
-        head = head.normalized;
-
         // 이동 처리
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
         Vector3 moving = Vector3.right * h + Vector3.forward * v;
-
         transform.position += moving * speed * Time.deltaTime;
     }
 
