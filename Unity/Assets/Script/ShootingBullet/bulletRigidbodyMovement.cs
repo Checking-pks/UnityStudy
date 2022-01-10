@@ -12,13 +12,13 @@ public class bulletRigidbodyMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        // 이동 처리
+        rb.AddForce(-transform.up * speed);
     }
 
     void FixedUpdate()
     {
-        // 이동 처리
-        rb.AddForce(-transform.up * speed);
-
         // 총알 제거 처리
         life -= Time.deltaTime;
         if (life <= 0) Destroy(gameObject);

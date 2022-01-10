@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8162436558467043005}
   - component: {fileID: 4264447498463680774}
   - component: {fileID: 8708007970289336471}
+  - component: {fileID: 8089981770453855632}
   m_Layer: 0
   m_Name: Bullet Rigidbody
   m_TagString: Untagged
@@ -90,7 +91,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8934883386942460549}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -124,5 +125,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d32e26adbc821546811db2116740104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 3000
   life: 5
+--- !u!114 &8089981770453855632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934883386942460549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a40194277c5804ea9ad42a7e3d6775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 60
