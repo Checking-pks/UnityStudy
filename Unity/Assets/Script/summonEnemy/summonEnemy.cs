@@ -7,12 +7,7 @@ public class summonEnemy : MonoBehaviour
     public GameObject Enemy;            // 적 오브젝트
     public float spawnCooldown = 10.0f; // 스폰 쿨타임
 
-    private float nowCooldown;
-
-    void Start()
-    {
-        nowCooldown = spawnCooldown;
-    }
+    private float nowCooldown = 0;
 
     void Update()
     {
